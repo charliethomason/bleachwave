@@ -13,7 +13,7 @@ This repository contains the code for the current version of [www.bleachwave.com
 * [Eric Meyer CSS reset](http://meyerweb.com/eric/tools/css/reset/)
 
 ## Bleachwave sub-domains
-* [The Bleachwave Blog](http://blog.bleachwave.com) - [click here to view repository](https://github.com/charliethomason/the_bleachwave_blog)
+* [The Bleachwave Blog](http://blog.bleachwave.com) - [click here to view repository](https://github.com/charliethomason/the-bleachwave-blog)
 * [The Bleachwave Photo Blog](http://photo.bleachwave.com) - Tumblr blog
 
 ## Contact Charlie
