@@ -1,0 +1,31 @@
+/*
+Site Name: Bleachwave: The Website of Charlie Thomason
+Description: Internet Explorer 7- CSS3 stylesheet for www.bleachwave.com. Do not re-use without permission.
+Version: 3.0
+Author: Charlie Thomason
+Contact: thomason.charlie@gmail.com 
+*/
+
+
+body {
+	box-shadow: none;
+}
+
+header h1 a {
+	display:block;
+	background-image:url("../images/bw-logo01b-ie.jpg");
+	width:667px;
+	height:357px;
+	margin:0 auto;
+}
+
+div.es-carousel-wrapper div.es-nav {
+	display:none;
+}
+
+div#portfolio-slider #controls {
+	display:none;
+}
+div#portfolio-slider #active {
+	display:none;
+}

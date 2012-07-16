@@ -1,0 +1,539 @@
+/*
+Tumblr CSS Stylesheet for The Bleachwave Blog
+blog.bleachwave.com or bleachwave.tumblr.com
+Stylesheet originally written for "The Minimalist" Theme http://theminimalist.co
+Updated stylesheet written by Charlie Thomason http://www.recycledfilm.net/about
+*/
+
+/*----- GENERAL -----*/
+
+header, footer, section, article, nav, aside {
+   display: block;
+}
+
+body {
+	background-color:#F8F5E9;
+	-moz-box-shadow: 0 0 70px #CBBB85 inset;
+	-webkit-box-shadow: 0 0 70px #CBBB85 inset;
+	box-shadow: 0 0 70px #CBBB85 inset;
+	color: #222;
+	font: 1.0em Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	padding-top: 25px;
+	text-align: center;
+	margin: 0 auto;
+	overflow-x:hidden;
+}
+
+div#bleachbox {
+	width: 960px;
+	margin:0 auto;
+}
+
+h1, h2, h3, hQ {
+   font-family: Cufon;
+}
+
+h1 {
+   font-size: 50px;
+   line-height: 50px;
+}
+
+h2 {
+   font-size: 31px;
+   line-height: 37px; 
+}
+
+h3 {
+   font-size: 21px;
+   line-height: 27px; 
+}
+
+a:link, a:visited {
+   color: #222222;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+a:hover, a:active {
+   text-decoration: underline;
+}
+
+hr{
+   border:0 #ccc solid;
+   border-top-width:1px;
+   clear:both;
+   height:0;
+}
+
+ol{list-style:decimal;}
+
+ul{list-style:disc;}
+
+li{margin-left:30px;}
+
+p,dl,hr,h1,h2,h3,h4,h5,h6,ol,ul,pre,table,address,fieldset{margin-bottom:15px;}
+
+#main {
+   padding: 0px;
+	border:1px solid #000;
+	background-color:#fff;
+}
+
+/*----- MASTHEAD -----*/
+
+.noMeta > div {
+   padding: 0px;
+}
+
+#masthead {
+   margin-bottom: 0px;
+}
+
+#masthead h1 {
+   margin-bottom: 0;
+   text-indent:-9999px;
+}
+
+#masthead h1 a {
+   text-decoration: none;
+   display:block;
+   background:url('http://www.bleachwave.com/images/bw-logo01b.png') no-repeat scroll 0 0 transparent;
+   width:667px;
+   height:357px;
+   margin:0 auto;
+}
+
+#masthead h1 a:active {
+   outline: 0;
+}
+
+#masthead p {
+   font-family: Georgia, serif;
+   font-size: 20px;
+   color: #fff;
+   margin-bottom: 0;
+}
+
+#siteDescription{
+   font: italic small-caps 1.0em 'IM Fell English', 'Times New Roman', Times, serif;
+   color: #111;
+   margin-top: 20px;
+   margin-bottom: 25px;
+   padding: 10px 0 0 0;
+}
+
+/*----- SEARCH FORM -----*/
+
+#frmSearch {
+   padding-top: 20px; 
+   display: none;
+}
+
+#txtSearch {
+   background: url('http://static.tumblr.com/bpryy0m/6lRl6gmys/search.jpg') left no-repeat #fff;
+   width: 225px;
+   padding: 4px 4px 4px 20px;
+   font: 12px/12px Georgia, "Times New Roman", Times, serif;
+   color: #222;
+   border: 0px;
+}
+/*----- BLEACHWAVE NAV STRIP ------*/
+
+div#nav {
+	background-color:#444;
+	font: normal 1.125em/1.6875em Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif; /* 18pt / 16px */
+	margin-bottom:3px;
+	padding:3px 0;
+	text-transform:uppercase;
+	float:left;
+	width:100%;
+}
+
+ul#bleachnav {
+	list-style:none;
+	min-width:370px;
+	text-align:center;
+	margin-bottom:0;
+}
+
+ul#bleachnav li {
+	display:block;
+	position: relative;
+	margin:0 3% 0 0;
+	float:left;
+}
+ul#bleachnav li:last-child {
+	margin:0;
+}
+
+ul#bleachnav li a {
+	color:#fff;
+	padding:8px;
+	font-weight:normal;
+}
+ul#bleachnav li a:hover {
+	background-color:#00dfd7;
+	text-decoration:none;
+}
+
+ul.dropnav {
+	z-index:1000;
+	background-clip:padding-box;
+	background-color:#fff;
+	border:1px solid rgba(0, 0, 0, 0.2);
+	box-shadow:0 0px 10px rgba(0, 0, 0, 0.2);
+	list-style:none;
+	width:160px;
+	display:none;
+	position:absolute;
+	padding:4px;
+	border-radius:6px;
+	text-align:left;
+	left:0;
+}
+
+ul.dropnav:after {
+	border-bottom: 6px solid #FFFFFF;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    content: "";
+    display: inline-block;
+    left: 24px;
+    position: absolute;
+    top: -6px;
+}
+	
+ul.dropnav:before {
+	border-bottom: 7px solid rgba(0, 0, 0, 0.2);
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    content: "";
+    display: inline-block;
+    left: 23px;
+    position: absolute;
+    top: -8px;
+}
+
+ul#bleachnav ul.dropnav li {
+	list-style:none;
+	margin:0;
+	clear:left;
+	width:100%;
+}
+
+ul#bleachnav ul.dropnav li a {
+	color:#444;
+	font-size:0.778em;
+	border-radius:0;
+	background-color:transparent;
+	border:0 none;
+	padding:0 4px;
+	display:block;
+}
+
+ul#bleachnav ul.dropnav li a:hover {
+	background-color:#00dfd7;
+}
+
+ul#bleachnav li:hover ul.dropnav {
+	display:block;
+}
+
+
+/*----- MAIN HEADER NAV STRIP -----*/
+
+#mainNav {
+   padding: 0 0 4px;
+   font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	background-color:#00dfd7;
+	border-bottom:1px solid #000;
+	margin: 0 0 13px;
+}
+
+#mainNav ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+#mainNav li {
+   margin: 5px;
+   display: inline;
+   padding: 0;
+}
+
+#mainNav a:link, #mainNav a:visited {
+   padding: 6px;
+   font-size: 14px;
+   line-height: 14px;
+   margin: 0 2px;
+   text-decoration: none;
+   color: #222;
+   text-transform: Uppercase;
+}
+
+#mainNav a:hover, #mainNav a:active {
+   outline: none;
+   text-decoration: none;
+	background-color:#444;
+	color:#fff;
+}
+
+/*----- ARTICLE META INFO -----*/
+
+#designline {
+   margin-top: 0;
+}
+
+h5{
+   font-family: 'Press Start 2P',Lato,Helvetica,Arial,sans-serif;
+   font-size: 1.125em;
+   color: #111;
+   text-decoration: none;
+   text-transform: Uppercase;
+	padding:10px 0 0;
+}
+
+h5 a:link, .line a:visited{
+   font-family: 'Press Start 2P',Lato,Helvetica,Arial,sans-serif;
+   font-size: 1.125em;
+   color: #111;
+   text-decoration: none;
+   text-transform: Uppercase;
+}
+
+h5 a:hover{
+   text-decoration: underline;
+}
+
+h5 abbr{
+   display: inline-block;
+   position: relative;
+   margin: 0 auto;
+   padding: 0 8px;
+}
+
+h5.postDate {
+	margin-bottom:0px;
+}
+
+h5.postDate a{
+   color: #111;
+}
+
+/*----- ARTICLE -----*/
+
+article {
+   text-align: left;
+  position: relative;
+  padding:20px 7px;
+ }
+
+article img {
+   border: none;
+   margin-bottom: 15px;
+   max-width: 500px;
+}
+
+article p img {
+   margin: 0;
+}
+article > div {
+   padding: 0px;
+   overflow: hidden;
+	text-align:center;
+}
+article .searchPage {
+   margin: 35px 0 0 0;
+}
+
+.searchPageText {
+   margin: 0 0 30px 0;
+}
+
+article .meta a:link, article .meta a:visited {
+   text-decoration: none;
+}
+
+article .meta a:hover, article .meta a:active {
+   text-decoration: underline;
+}
+
+article h2 {
+   text-align: center;
+   color: #222222;
+}
+
+article h2 a:link, article h2 a:visited {
+   text-transform: Uppercase;
+   color: #222;
+   text-decoration: none;
+}
+
+article h2 a:hover, article h2 a:active {
+   text-decoration: none;
+   border-bottom: 1px solid #222;
+}
+
+blockquote {
+   border-left: 2px solid #bca474;
+   margin-left: 0;
+   padding-left: 1em;
+}
+
+#quoteSource{
+   margin: 0 auto;
+   text-align: left;
+}
+
+#quoteText h2 {
+   text-align: left;
+   color: #222222;
+}
+
+article .chat {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+article .chat li {
+   margin: 0 0 2px;
+   padding: 2px 0 2px 0;
+}
+
+.photoCaption {
+   text-align: center;
+}
+
+/*----- AUDIO PLAYER -----*/
+
+.audio {
+   height: 28px;
+   width: 26px;
+   overflow: hidden;
+   margin: auto;
+   padding-top: 7px;
+}
+
+.audioc {
+   background-image:url('http://static.tumblr.com/f1whv92/9iCl6bfgp/audiocircle.png');
+   background-repeat: no-repeat; 
+   height: 41px;
+   width: 41px;
+}
+
+.audioCaption {
+   margin-top: 1px;
+}
+
+.audioleft {
+   width: 41px;
+   float: left;
+ }
+
+.audioright {
+   width: 444px;
+   float: right;
+ }
+
+.audioContainer {
+   margin-top: 5px;
+}
+
+.audioClear {
+   clear:both;
+}
+
+/*----- ARTICLE NOTES -----*/
+
+.notes {
+   border-top: 1px solid #bca474;
+   list-style: none;
+   padding: 20px 0 5px 0;
+   margin: 30px 0 0 0;
+}
+.notes li {
+   margin: 0;
+}
+
+.notes .avatar {
+   margin: 0 5px 0 0;
+   position: relative;
+   top: 5px;
+}
+
+.notes blockquote {
+   margin: 10px 0 0 35px;
+   padding-left: 10px;
+   border-left: 2px solid #222222;
+}
+
+.media {
+   width: 500px;
+   margin-bottom: 20px;
+}
+
+/*----- PAGE NAVIGATION -----*/
+
+#pageNav {
+   margin-top: 20px;
+   border-top: 1px solid #222;
+}
+
+#pageNav ul {
+   list-style: none;
+   padding: 10px 15px;
+   margin: 10px 0;
+}
+
+#pageNav li {
+   margin: 0;
+   display: inline;
+}
+
+#pageNav a:link, #pageNav a:visited {
+   font: 11px Georgia, "Times New Roman", Times, serif;
+   padding: 0;
+   margin: 0 2px;
+   background: #34hdf5;
+   color: #222;
+   text-decoration: none;
+}
+
+#pageNav a:hover, #pageNav a:active, #pageNav a.active:link, #pageNav a.active:visited {
+   text-decoration: underline;
+}
+
+#pageNavOlder:after {
+   content: " »";
+   font-size: 10px;
+}
+
+#pageNavNewer:before {
+   content: "« ";
+}
+
+/*----- FOOTER META -----*/
+
+#sitemeta {
+   border-top: 2px solid #222;
+   color: #222;
+   padding: 20px 0 32px 0;
+   font-family: Georgia, "Times New Roman", Times, serif;
+   font-size: 11px;
+}
+
+#sitemeta p {
+   margin: 0;
+}
+
+#sitemeta a:link, #sitemeta a:visited {
+   color: #222;
+   font-weight: bold;
+}
+
+/*------- MEDIA QUERIES ------*/
+
+
+{CustomCSS}

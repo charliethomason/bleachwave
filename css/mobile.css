@@ -1,0 +1,116 @@
+/*
+Site Name: Bleachwave: The Website of Charlie Thomason
+Description: Responsive layout CSS3 stylesheet for www.bleachwave.com. Do not re-use without permission.
+Version: 3.0
+Author: Charlie Thomason
+Contact: thomason.charlie@gmail.com 
+*/
+
+@media screen and (max-width:1100px) {
+	ul#mainnav li {
+		margin-right:2%;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	/* main container condenses to smaller version below 1000px */
+	div#container {
+		max-width:690px;
+	}
+	/* charlie bio pic shrinks */
+	div#charliepic {
+		width:33.3%;
+	}
+	div#charliepic img {
+		max-width:100%;
+	}
+	/* nav font size shrinks so that list items do not jump to second line */
+	ul#mainnav li {
+		font-size:0.8em;
+		margin-right:1.3%;
+	}
+	/* dropnav list items do not get smaller when mainnav font-size decreases*/
+	ul#mainnav li ul.dropnav li a {
+		font-size:1.1em;
+	}
+	/* Currently box disappears and Blog and Connect boxes expand to 100% */
+	div#blogfeed {
+		clear:left;
+		width:96.889%;
+		min-height:inherit;
+	}
+	div#currently {
+		display:none;
+	}
+	div#connect {
+		width:96.889%;
+		min-height:inherit;
+	}
+	/* Portfolio container contracts to a 3-across grid */
+	div.portfolio-container ul li {
+		width:32%;
+	}
+	div.portfolio-container ul li:nth-child(4n+4) {
+		margin-right:1.56%;
+	}
+	div.portfolio-container ul li:nth-child(3n+3){
+		margin-right:0;
+	}
+	/* Moves "Buy a Print/Book" and "View Site" buttons to left side */
+	div#portfolio-info div#button {
+		float:left;
+		clear:left;
+		margin:0 0 10px;
+	}
+	div#aboutbox ul.resumelist {
+		margin-left:3%;
+	}
+	div#aboutbox ul.aboutlist {
+		margin-left:3%;
+	}
+	div#aboutbox ul.aboutbuttons {
+		font-size:0.875em;
+	}
+	/* Show only the first image in CSS3 portfolio single image slider */
+	div#portfolio-slider #slides article:nth-child(n+2) {
+		display:none;
+	}
+	div#portfolio-slider #controls {
+		display:none;
+	}
+	div#portfolio-slider #active {
+		display:none;
+	}
+}
+
+@media screen and (max-width:750px) {
+	/* hide "home", and dropdown menus from main nav elements below 750px */
+	ul#mainnav li:hover ul.dropnav {
+		display:none;
+	}
+	ul#mainnav li:first-child {
+		display:none;
+	}
+	ul#mainnav li:last-child {
+		display:none;
+	}
+	/* switch to small logo */
+	header h1 a {
+		background: url("../images/bw-logo01b-mobile.png") no-repeat scroll 0 0 transparent;
+		height: 244px;
+	    width: 455px;
+	}
+}
+
+@media screen and (max-width:650px) {
+	/* Portfolio container contracts to a 2-across grid */
+	div.portfolio-container ul li {
+		width:48%;
+	}
+	div.portfolio-container ul li:nth-child(3n+3) {
+		margin-right:1.56%;
+	}
+	div.portfolio-container ul li:nth-child(even){
+		margin-right:0;
+	}
+}
