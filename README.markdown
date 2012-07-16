@@ -9,6 +9,8 @@ This repository contains the code for the current version of [www.bleachwave.com
 * JQuery
 * [JQuery Touchwipe Plugin](http://www.netcu.de/jquery-touchwipe-iphone-ipad-library)
 * [Feedburner BuzzBoost](http://support.google.com/feedburner/bin/answer.py?hl=en&answer=78976)
+* Google Fonts
+* [Eric Meyer CSS reset](http://meyerweb.com/eric/tools/css/reset/)
 
 ## Bleachwave sub-domains
 * [The Bleachwave Blog](http://blog.bleachwave.com) - [click here to view repository](https://github.com/charliethomason/the_bleachwave_blog)
