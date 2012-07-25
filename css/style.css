@@ -786,6 +786,7 @@ div#portfolio-info div#button a, div#portfolio-info div#button a:visited {
 	display:block;
 	background-color:#222;
 	color:#fff;
+	margin:8px 0 0;
 	padding:8px 35px;
 	text-transform:uppercase;
 }
