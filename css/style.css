@@ -183,6 +183,9 @@ ul#mainnav li:last-child {
 }
 
 ul#mainnav li a {
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
 	color:#fff;
 	padding:8px;
 }
@@ -355,6 +358,9 @@ div#biobox ul#biobuttons li {
 }
 
 div#biobox ul#biobuttons a {
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
 	background-color:#222;
 	color:#fff;
 	margin-right:15px;
@@ -437,6 +443,9 @@ div#aboutbox h3 {
 }
 
 div#aboutbox h3 a, div#aboutbox h3 a:visited {
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
 	color:#111;
 }
 
@@ -484,6 +493,9 @@ div#aboutbox aside.aboutnav ul.aboutnavlist {
 }
 
 div#aboutbox aside.aboutnav ul.aboutnavlist li a {
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
 	display:block;
 	color:#111;
 	text-transform:uppercase;
@@ -528,6 +540,9 @@ section#webslider h3, section#artslider h3 {
 }
 
 section#webslider h3 a, section#webslider h3 a:visited, section#artslider h3 a, section#artslider h3 a:visited {
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
 	color:#111;
 }
 
@@ -683,6 +698,9 @@ div.portfolio-description a:hover {
 }
 
 div.portfolio-description div.buybutton a, div.portfolio-description div.buybutton a:visited {
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
 	background-color:#222;
 	color:#fff;
 	display:block;
@@ -762,6 +780,9 @@ div#portfolio-info div#button {
 }
 
 div#portfolio-info div#button a, div#portfolio-info div#button a:visited {
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
 	display:block;
 	background-color:#222;
 	color:#fff;
@@ -1012,12 +1033,14 @@ div#blogfeed ul {
 }
 
 div#blogfeed ul a, div#blogfeed ul a:visited, p.fbsubscribelink a, p.fbsubscribelink a:visited {
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
 	color:#111;
 }
 
 div#blogfeed ul a:hover, p.fbsubscribelink a:hover {
 	color:#444;
-	text-decoration:underline;
 }
 
 div#currently h4 {
